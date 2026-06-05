@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Программное обеспечение</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:40px;
+    background:#f4f6f8;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-top:0;
+    color:#2d6cdf;
+}
+
+pre{
+    background:#111;
+    color:#0f0;
+    padding:15px;
+    overflow-x:auto;
+    border-radius:8px;
+}
+
+a{
+    color:#2d6cdf;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.back{
+    display:block;
+    margin-top:30px;
+    text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Программное обеспечение</h1>
+
+<div class="container">
+
+    <!-- Keithley 6430 -->
+    <div class="card">
+        <h2>Keithley 6430</h2>
+        <p>Программное управление измерительным прибором Keithley 6430.</p>
+
+        <pre>
+// === INIT ===
+init_device();
+set_mode("CURR");
+
+// === SCPI COMMANDS ===
+send("*IDN?");
+send("SYST:ZCH OFF");
+send("CURR:RANG AUTO");
+
+// === READ ===
+value = read_current();
+        </pre>
+    </div>
+
+    <!-- Keithley 6514 -->
+    <div class="card">
+        <h2>Keithley 6514</h2>
+        <p>Управление электрометром Keithley 6514.</p>
+
+        <pre>
+// === INIT ===
+init_6514();
+set_mode("VOLT");
+
+// === COMMANDS ===
+send("FUNC 'VOLT'");
+send("ZERO:AUTO ON");
+
+// === READ ===
+value = read_voltage();
+        </pre>
+    </div>
+
+    <!-- SR850 -->
+    <div class="card">
+        <h2>SR850</h2>
+        <p>Управление lock-in усилителем SR850.</p>
+
+        <pre>
+// === INIT ===
+sr850_init();
+send("OUTP? 1");
+
+// === CONFIG ===
+send("FREQ 1000");
+send("OFLT 12");
+
+// === READ ===
+x = read_X();
+y = read_Y();
+        </pre>
+    </div>
+
+    <!-- Lake Shore 625 -->
+    <div class="card">
+        <h2>Lake Shore 625</h2>
+        <p>Контроль температурного измерителя Lake Shore 625.</p>
+
+        <pre>
+// === INIT ===
+lakeshore_init();
+send("KRDG? A");
+
+// === READ TEMP ===
+temp = read_temperature();
+        </pre>
+    </div>
+
+</div>
+
+<!-- BACK -->
+<div class="back">
+    <a href="../index.html">← Назад на главную</a>
+</div>
+
+</body>
+</html>
