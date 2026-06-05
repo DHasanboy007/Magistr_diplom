@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Магистерская диссертация - Давуров Хасан</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:40px;
+    background:#f5f5f5;
+}
+
+h1{
+    text-align:center;
+}
+
+.menu{
+    max-width:800px;
+    margin:auto;
+}
+
+.block{
+    background:white;
+    margin:15px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+
+a{
+    text-decoration:none;
+    color:#0066cc;
+    font-size:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Магистерская диссертация</h1>
+
+<div class="menu">
+
+<div class="block">
+<a href="diplom_word/">Текст диплома</a>
+</div>
+
+<div class="block">
+<a href="programma/">Программное обеспечение</a>
+</div>
+
+<div class="block">
+<a href="plata/">Печатные платы и схемы</a>
+</div>
+
+<div class="block">
+<a href="rasmlar/">Изображения и результаты</a>
+</div>
+
+<div class="block">
+<a href="adabitoylar/">Литература</a>
+</div>
+
+</div>
+
+</body>
+</html>
