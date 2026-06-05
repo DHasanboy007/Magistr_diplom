@@ -199,8 +199,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "4cc62021fc2373cb",
+  "active": "9c223e1593b021f2",
   "lastOpenFiles": [
+    "M_diplom.html",
+    "M_diplom.txt",
+    "index.html",
+    "Новый текстовый документ.txt",
     "2 Литературный.pdf",
     "rasmlar/Rasmlar Anaconda/uart_gpib_ultra_ideal_layout.png",
     "rasmlar/Rasmlar Anaconda/uart_gpib_clean_thesis_system.png",
@@ -218,10 +222,6 @@
     "rasmlar/Rasmlar Anaconda/ieee_488_gpib_clean_schematic.png",
     "rasmlar/Rasmlar Anaconda/ieee_488_gpib_exact_match.png",
     "rasmlar/Rasmlar Anaconda",
-    "rasmlar",
-    "programma/SR850/D_SR850.h",
-    "programma/SR850/DH_SR850.c",
-    "programma/SR850/D_main.c",
     "Welcome.md"
   ]
 }
